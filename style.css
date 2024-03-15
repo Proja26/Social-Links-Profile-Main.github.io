@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color-green: hsl(75, 94%, 57%);
+    --secondary-color-white: hsl(0, 0%, 100%);
+    --secondary-color-grey: hsl(0, 0%, 20%);
+    --secondary-color-DarkGrey: hsl(0, 0%, 12%);
+    --secondary-color-OffBlack: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--secondary-color-OffBlack);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.container {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--secondary-color-DarkGrey);
+    width: 300px;
+    height: 480px;
+    position: relative;
+}
+
+
+
+img {
+    border-radius: 50%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 5%; 
+}
+
+.container .main-h1 {
+    color: var(--secondary-color-white);
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center; 
+    margin-top: 80px; 
+}
+
+.container .main-h4 {
+    color: var(--primary-color-green);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center; 
+    margin-top: 7px;
+}
+
+.container .main-p {
+    color: var(--secondary-color-white);
+    font-size: 11px;
+    opacity: 0.9;
+    padding: 0 15px;
+    text-align: center;
+    margin-top: 22px; 
+    margin-bottom: -8px;
+    font-weight: 400;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 250px;
+    margin-top: 30px;
+}
+
+.btn-container .btn {
+    width: 100%;
+    padding: 10px 0;
+    margin: 6px 0;
+    background-color: var(--secondary-color-grey);
+    color: var(--secondary-color-white);
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-container .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-container .btn:hover {
+    background-color: var(--primary-color-green);
+    color: var(--secondary-color-OffBlack);
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .container {
+        width: 100%;
+        max-width: 300px; 
+        max-height: 100%; 
+        margin: 0;
+    }
+}
